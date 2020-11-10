@@ -75,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
                                 //.setVibrate(new long[] {0, 3000, 0, 3000, 0, 3000})
                                 //.setAutoCancel(true)
                                 .setLights(Color.rgb(0,0,0), 1000, 1000)
+                                .setStyle(new NotificationCompat.BigTextStyle().bigText("Stack Overflow is an open community for anyone that codes. We help you get answers to your toughest coding questions, share knowledge with your coworkers in private, and find your next dream job."))
+                                .setStyle(new NotificationCompat.BigPictureStyle().bigPicture(BitmapFactory.decodeResource(getResources(), R.drawable.big_image)))
+                                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                                 .build();
 
                         manager.notify(1, notification);
